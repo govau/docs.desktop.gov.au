@@ -1,6 +1,11 @@
 body {
     margin: 0;
 }
+body:not(.home) {
+    #content {
+        margin-top: 2em;
+    }
+}
 .au-body {
     h2, h3 {
         font-weight: 300;
@@ -16,6 +21,8 @@ body {
 .au-header.au-header--dark,
 .au-footer.au-footer--dark {
     background-color: $AU-color-background;
+}
+.au-footer.au-footer--dark {
     border: none;
 }
 .au-header.au-header--dark {
@@ -61,6 +68,9 @@ footer.au-footer {
     border: none;
 }
 header.au-header {
+    border-bottom: 0.5rem solid #61daff;
+    padding-bottom: 1em;
+
     div.col-md-12 {
         text-align: center;
     }
