@@ -66,10 +66,19 @@ footer.au-footer {
 }
 .au-header--dark .au-header__brand .au-header__brand-image+.au-header__text {
     border: none;
+    margin-top: 0;
+}
+.au-header__brand .au-header__brand-image+.au-header__text {
+    margin-top: 0 !important;
+}
+.au-header__subline {
+    display: none;
 }
 header.au-header {
     border-bottom: 0.5rem solid #61daff;
-    padding-bottom: 1em;
+    padding: 0;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
 
     div.col-md-12 {
         text-align: center;
