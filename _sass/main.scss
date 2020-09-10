@@ -71,6 +71,11 @@ footer.au-footer {
 .au-header__brand .au-header__brand-image+.au-header__text {
     margin-top: 0 !important;
 }
+.au-header__heading {
+    font-weight: normal;
+    font-size: 1.2em;
+    padding-top: 4px;
+}
 .au-header__subline {
     display: none;
 }
