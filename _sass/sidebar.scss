@@ -105,8 +105,8 @@ aside.au-side-nav {
         
         ul {
             list-style-type: none;
-            margin: 0;    
-            padding-left: 1.5em;
+            margin: 0;
+            padding: 0;
 
             ul {
                 a:before {
@@ -117,6 +117,12 @@ aside.au-side-nav {
         li {
             margin: 0;
             border: none;
+
+            li {
+                a {
+                    padding-left: 2em;
+                }
+            }
 
             a {
                 padding: 4px;
