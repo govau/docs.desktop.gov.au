@@ -1,10 +1,18 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
+    position: relative;
+    overflow-y: auto;
 }
 body:not(.home) {
     #content {
         margin-top: 2em;
     }
+}
+h1 {
+    font-size: 2em;
 }
 .au-body {
     h2, h3 {
@@ -12,6 +20,19 @@ body:not(.home) {
     }
     pre {
         white-space: pre-wrap;
+    }
+}
+
+header {
+    border-bottom: 0.5rem solid $primary-color;
+}
+footer {
+    a {
+        color: $primary-color;
+
+        &:hover {
+            color: #fff;
+        }
     }
 }
 
@@ -47,10 +68,10 @@ footer.au-footer {
     }
 }
 
-.au-card {
+.card {
     border-top: 4px solid $primary-color;
 
-    h2.au-card__title {
+    h2 {
         font-size: 1.5em;
     }
 }
@@ -129,8 +150,14 @@ header.au-header {
 }
 
 #content-area {
+    position: relative;
+
     h2 {
         border-bottom: 1px solid #eee;
+        margin-top: 2em;
+    }
+    h3, h4, h5, h6 {
+        margin-top: 1.25em;
     }
 }
 
@@ -140,12 +167,35 @@ header.au-header {
     -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
 }
-.transition-medium, #content a, .mega-footer a {
+.transition-medium, #lhs a, #content a, .mega-footer a {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
+
+
+#lhs {
+    width: 280px;
+    position: sticky;
+    top: 0;
+    padding-bottom: 32px;
+    overflow-y: auto;
+    height: 100vh;
+    flex-shrink: 0;
+}
+#rhs {
+    width: 280px;
+    position: sticky;
+    flex-shrink: 0;
+    height: 100vh;
+    top: 0;
+}
+main {
+    width: 100% !important;
+    display: block;
+}
+
 
 /* sm */
 @media (min-width: 768px) {

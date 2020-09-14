@@ -19,24 +19,19 @@
 {% if page.layout == 'home' %}
     {% assign extra_body_class = " home" | append: extra_body_class %}
 {% endif %}
-<body class="au-grid{{ extra_body_class }}">
-<nav class="au-skip-link">
-    <a class="au-skip-link__link" href="#content">Skip to main content</a>
-    <a class="au-skip-link__link" href="#mainmenu">Skip to main navigation</a>
+<body class="au-grid{{ extra_body_class }}" data-spy="scroll" data-target="#zzz">
+
+<nav class="sr-only">
+    <a href="#content">Skip to main content</a>
+    <a href="#mainmenu">Skip to main navigation</a>
 </nav>
 
-<header class="au-header" role="banner">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <a class="au-header__brand" href="{{ site.url }}/">
-                    <img class="au-header__brand-image" alt="Australian Government Coat of Arms" src="/assets/images/australian-government-inline.png">
-                    <div class="au-header__text">
-                        <h1 class="au-header__heading">{{ site.title }}</h1>
-                        <div class="au-header__subline">{{ site.description | escape }}</div>
-                    </div>
-                </a>
-            </div>
-        </div>
+<header class="d-flex p-3" role="banner">
+    <div class="align-self-center">
+        <a class="" href="{{ site.url }}/"><img class="" alt="Australian Government Coat of Arms" src="/assets/images/dta.png" style="max-height: 66px;"></a>
+    </div>
+    <div class="ml-3 align-self-center">
+        <h1 class="">{{ site.title }}</h1>
+        <div class="">{{ site.description | escape }}</div>
     </div>
 </header>
